@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url("background3.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            -webkit-text-stroke: 1px blue;
+        }
+        .container1 {
+            position: fixed;
+            left: 50px;
+            top: 100px;
+            color: white;
+        }
+        .container2 {
+            position: fixed;
+            left: 250px;
+            top: 100px;
+            color: white;
+        }
+        .container3 {
+            position: fixed;
+            left: 450px;
+            top: 100px;
+            color: white;
+        }
+        .container4{
+            position: fixed;
+            left: 50px;
+            top: 360px;
+            color: white;
+        }
+        .container5{
+            position: fixed;
+            left: 250px;
+            top: 360px;
+            color: white;
+        }
+        .container6{
+            position: fixed;
+            left: 450px;
+            top: 360px;
+            color: white;
+        }
+        .alert {
+            color: red;
+            position:relative;
+            left:580px;
+            top:40px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Watchlist</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
+        <a class="navbar-brand" style="color: rgb(191, 255, 161)">My Watchlist</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <form method="POST" action='/search' class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" name="Search" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+<!-- Conjuring -->
+    <%if(conjuringinwatchlist === 1){%>
+        <div class="container1">
+        <img id="image" src="/conjuring.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Conjuring (2013)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(conjuringinwatchlist === 2){%>
+        <div class="container2">
+        <img id="image" src="/conjuring.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Conjuring (2013)</label>
+        <br>
+        </div>
+    <%}%>
+    
+    <%if(conjuringinwatchlist === 3){%>
+        <div class="container3">
+        <img id="image" src="/conjuring.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Conjuring (2013)</label>
+        <br>
+        </div>
+    <%}%>    
+    
+    <%if(conjuringinwatchlist === 4){%>
+        <div class="container4">
+        <img id="image" src="/conjuring.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Conjuring (2013)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(conjuringinwatchlist === 5){%>
+        <div class="container5">
+        <img id="image" src="/conjuring.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Conjuring (2013)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(conjuringinwatchlist === 6){%>
+        <div class="container6">
+        <img id="image" src="/conjuring.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Conjuring (2013)</label>
+        <br>
+        </div>
+    <%}%>
+
+<!--Godfather-->   
+    <%if(godfatherinwatchlist === 1){%>
+        <div class="container1">
+        <img id="image" src="/godfather.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">The Godfather (1972)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(godfatherinwatchlist === 2){%>
+        <div class="container2">
+        <img id="image" src="/godfather.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">The Godfather (1972)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(godfatherinwatchlist === 3){%>
+        <div class="container3">
+        <img id="image" src="/godfather.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">The Godfather (1972)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(godfatherinwatchlist === 4){%>
+        <div class="container4">
+        <img id="image" src="/godfather.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">The Godfather (1972)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(godfatherinwatchlist === 5){%>
+        <div class="container5">
+        <img id="image" src="/godfather.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">The Godfather (1972)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(godfatherinwatchlist === 6){%>
+        <div class="container6">
+        <img id="image" src="/godfather.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">The Godfather (1972)</label>
+        <br>
+        </div>
+    <%}%>
+
+<!--Godfather 2-->    
+    <%if(godfathertwoinwatchlist === 1){%>
+        <div class="container1">
+        <img id="image" src="/godfather2.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Godfather: Part II (1974)</label>
+        <br>
+        </div>
+    <%}%>
+    
+    <%if(godfathertwoinwatchlist === 2){%>
+        <div class="container2">
+        <img id="image" src="/godfather2.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Godfather: Part II (1974)</label>
+        <br>
+        </div>
+    <%}%>
+    
+    <%if(godfathertwoinwatchlist === 3){%>
+        <div class="container3">
+        <img id="image" src="/godfather2.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Godfather: Part II (1974)</label>
+        <br>
+        </div>
+    <%}%>  
+
+    <%if(godfathertwoinwatchlist === 4){%>
+        <div class="container4">
+        <img id="image" src="/godfather2.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Godfather: Part II (1974)</label>
+        <br>
+        </div>
+    <%}%> 
+    
+    <%if(godfathertwoinwatchlist === 5){%>
+        <div class="container5">
+        <img id="image" src="/godfather2.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Godfather: Part II (1974)</label>
+        <br>
+        </div>
+    <%}%>
+    
+    <%if(godfathertwoinwatchlist === 6){%>
+        <div class="container6">
+        <img id="image" src="/godfather2.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Godfather: Part II (1974)</label>
+        <br>
+        </div>
+    <%}%>  
+
+<!--Scream-->
+    <%if(screaminwatchlist === 1){%>
+        <div class="container1">
+        <img id="image" src="/scream.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Scream (1996)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(screaminwatchlist === 2){%>
+        <div class="container2">
+        <img id="image" src="/scream.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Scream (1996)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(screaminwatchlist === 3){%>
+        <div class="container3">
+        <img id="image" src="/scream.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Scream (1996)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(screaminwatchlist === 4){%>
+        <div class="container4">
+        <img id="image" src="/scream.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Scream (1996)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(screaminwatchlist === 5){%>
+        <div class="container5">
+        <img id="image" src="/scream.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Scream (1996)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(screaminwatchlist === 6){%>
+        <div class="container6">
+        <img id="image" src="/scream.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Scream (1996)</label>
+        <br>
+        </div>
+    <%}%>
+
+<!--Dark Knight-->    
+                 
+    <%if(darkknightinwatchlist === 1){%>
+        <div class="container1">
+        <img id="image" src="/darkknight.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Dark Knight (2008)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(darkknightinwatchlist === 2){%>
+        <div class="container2">
+        <img id="image" src="/darkknight.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Dark Knight (2008)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(darkknightinwatchlist === 3){%>
+        <div class="container3">
+        <img id="image" src="/darkknight.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Dark Knight (2008)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(darkknightinwatchlist === 4){%>
+        <div class="container4">
+        <img id="image" src="/darkknight.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Dark Knight (2008)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(darkknightinwatchlist === 5){%>
+        <div class="container5">
+        <img id="image" src="/darkknight.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Dark Knight (2008)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(darkknightinwatchlist === 6){%>
+        <div class="container6">
+        <img id="image" src="/darkknight.jpg" width="20%" height="20%">
+        <br>
+        <label id ="label2" class="ml-4 my-2">The Dark Knight (2008)</label>
+        <br>
+        </div>
+    <%}%>
+<!--Fight Club-->    
+
+    <%if(fightclubinwatchlist === 1){%>
+        <div class="container1">
+        <img id="image" src="/fightclub.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Fight Club (1999)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(fightclubinwatchlist === 2){%>
+        <div class="container2">
+        <img id="image" src="/fightclub.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Fight Club (1999)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(fightclubinwatchlist === 3){%>
+        <div class="container3">
+        <img id="image" src="/fightclub.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Fight Club (1999)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(fightclubinwatchlist === 4){%>
+        <div class="container4">
+        <img id="image" src="/fightclub.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Fight Club (1999)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(fightclubinwatchlist === 5){%>
+        <div class="container5">
+        <img id="image" src="/fightclub.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Fight Club (1999)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(fightclubinwatchlist === 6){%>
+        <div class="container6">
+        <img id="image" src="/fightclub.jpg" width="20%" height="20%">
+        <br>
+        <label id="label1" class="ml-4 my-2">Fight Club (1999)</label>
+        <br>
+        </div>
+    <%}%>
+
+    <%if(conjuringinwatchlist === 0 && godfatherinwatchlist === 0 && godfathertwoinwatchlist === 0 && screaminwatchlist === 0 && darkknightinwatchlist === 0 && fightclubinwatchlist === 0) {%>
+        <p id = "alert" class = "alert">There are not movies in the watchlist!</p>
+    <%}%>    
+</body>
+</html>
